@@ -17,3 +17,23 @@ C:\Users\student\source\repos\WpfAppSimpleProject\WpfAppSimpleProject\obj\Debug\
 C:\Users\student\source\repos\WpfAppSimpleProject\WpfAppSimpleProject\obj\Debug\netcoreapp3.1\WpfAppSimpleProject.dll
 C:\Users\student\source\repos\WpfAppSimpleProject\WpfAppSimpleProject\obj\Debug\netcoreapp3.1\WpfAppSimpleProject.pdb
 C:\Users\student\source\repos\WpfAppSimpleProject\WpfAppSimpleProject\obj\Debug\netcoreapp3.1\WpfAppSimpleProject.genruntimeconfig.cache
+D:\3 Академія Шаг\Предмети\Управління командними проектами\Projects\WpfAppSimpleProject\WpfAppSimpleProject\bin\Debug\netcoreapp3.1\WpfAppSimpleProject.exe
+D:\3 Академія Шаг\Предмети\Управління командними проектами\Projects\WpfAppSimpleProject\WpfAppSimpleProject\bin\Debug\netcoreapp3.1\WpfAppSimpleProject.deps.json
+D:\3 Академія Шаг\Предмети\Управління командними проектами\Projects\WpfAppSimpleProject\WpfAppSimpleProject\bin\Debug\netcoreapp3.1\WpfAppSimpleProject.runtimeconfig.json
+D:\3 Академія Шаг\Предмети\Управління командними проектами\Projects\WpfAppSimpleProject\WpfAppSimpleProject\bin\Debug\netcoreapp3.1\WpfAppSimpleProject.runtimeconfig.dev.json
+D:\3 Академія Шаг\Предмети\Управління командними проектами\Projects\WpfAppSimpleProject\WpfAppSimpleProject\bin\Debug\netcoreapp3.1\WpfAppSimpleProject.dll
+D:\3 Академія Шаг\Предмети\Управління командними проектами\Projects\WpfAppSimpleProject\WpfAppSimpleProject\bin\Debug\netcoreapp3.1\WpfAppSimpleProject.pdb
+D:\3 Академія Шаг\Предмети\Управління командними проектами\Projects\WpfAppSimpleProject\WpfAppSimpleProject\obj\Debug\netcoreapp3.1\WpfAppSimpleProject.csproj.AssemblyReference.cache
+D:\3 Академія Шаг\Предмети\Управління командними проектами\Projects\WpfAppSimpleProject\WpfAppSimpleProject\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+D:\3 Академія Шаг\Предмети\Управління командними проектами\Projects\WpfAppSimpleProject\WpfAppSimpleProject\obj\Debug\netcoreapp3.1\App.g.cs
+D:\3 Академія Шаг\Предмети\Управління командними проектами\Projects\WpfAppSimpleProject\WpfAppSimpleProject\obj\Debug\netcoreapp3.1\WpfAppSimpleProject_MarkupCompile.cache
+D:\3 Академія Шаг\Предмети\Управління командними проектами\Projects\WpfAppSimpleProject\WpfAppSimpleProject\obj\Debug\netcoreapp3.1\WpfAppSimpleProject_MarkupCompile.lref
+D:\3 Академія Шаг\Предмети\Управління командними проектами\Projects\WpfAppSimpleProject\WpfAppSimpleProject\obj\Debug\netcoreapp3.1\MainWindow.baml
+D:\3 Академія Шаг\Предмети\Управління командними проектами\Projects\WpfAppSimpleProject\WpfAppSimpleProject\obj\Debug\netcoreapp3.1\WpfAppSimpleProject.g.resources
+D:\3 Академія Шаг\Предмети\Управління командними проектами\Projects\WpfAppSimpleProject\WpfAppSimpleProject\obj\Debug\netcoreapp3.1\WpfAppSimpleProject.GeneratedMSBuildEditorConfig.editorconfig
+D:\3 Академія Шаг\Предмети\Управління командними проектами\Projects\WpfAppSimpleProject\WpfAppSimpleProject\obj\Debug\netcoreapp3.1\WpfAppSimpleProject.AssemblyInfoInputs.cache
+D:\3 Академія Шаг\Предмети\Управління командними проектами\Projects\WpfAppSimpleProject\WpfAppSimpleProject\obj\Debug\netcoreapp3.1\WpfAppSimpleProject.AssemblyInfo.cs
+D:\3 Академія Шаг\Предмети\Управління командними проектами\Projects\WpfAppSimpleProject\WpfAppSimpleProject\obj\Debug\netcoreapp3.1\WpfAppSimpleProject.csproj.CoreCompileInputs.cache
+D:\3 Академія Шаг\Предмети\Управління командними проектами\Projects\WpfAppSimpleProject\WpfAppSimpleProject\obj\Debug\netcoreapp3.1\WpfAppSimpleProject.dll
+D:\3 Академія Шаг\Предмети\Управління командними проектами\Projects\WpfAppSimpleProject\WpfAppSimpleProject\obj\Debug\netcoreapp3.1\WpfAppSimpleProject.pdb
+D:\3 Академія Шаг\Предмети\Управління командними проектами\Projects\WpfAppSimpleProject\WpfAppSimpleProject\obj\Debug\netcoreapp3.1\WpfAppSimpleProject.genruntimeconfig.cache
