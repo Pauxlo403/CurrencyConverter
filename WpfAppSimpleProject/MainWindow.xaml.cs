@@ -27,11 +27,8 @@ namespace WpfAppSimpleProject
             _currencyConverter = new CurrencyConverter();
             InitializeComponent();
 
-
-
-
+            DataContext = _currencyConverter;
             //var href =  _currencyConverter.BankHrefApi;
-
         }
 
         private void MenuItem_Exit_Click(object sender, RoutedEventArgs e)

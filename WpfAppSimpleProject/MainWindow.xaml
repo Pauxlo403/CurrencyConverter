@@ -32,18 +32,18 @@
 
             <StackPanel Grid.Row="0" Orientation="Vertical">
                 <!--Дата-->
-                <DatePicker Width="100"></DatePicker>
+                <DatePicker Width="100" SelectedDate="{Binding Date}"></DatePicker>
                 
                 <!--Перша валюта-->
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,8,0,0">
-                    <TextBox Width="100"></TextBox>
-                    <ComboBox Width="160"></ComboBox>
+                    <TextBox Width="100" Text="{Binding Number1}"></TextBox>
+                    <ComboBox Width="160" Margin="8,0,0,0"></ComboBox>
                 </StackPanel>
                 
                 <!--Друга валюта-->
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,8,0,0">
-                    <TextBox Width="100"></TextBox>
-                    <ComboBox Width="160"></ComboBox>
+                    <TextBox Width="100" Text="{Binding Number2}"></TextBox>
+                    <ComboBox Width="160" Margin="8,0,0,0"></ComboBox>
                 </StackPanel>
                 
                 <!--Кнопка "Виконати"-->

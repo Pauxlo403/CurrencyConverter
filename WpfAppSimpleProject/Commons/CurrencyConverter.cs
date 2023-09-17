@@ -1,18 +1,44 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Net;
+using System.Runtime.CompilerServices;
 using System.Text;
 
 namespace WpfAppSimpleProject.Commons
 {
-    class CurrencyConverter
+    class CurrencyConverter : INotifyPropertyChanged
     {
         //20200302&json
         private string _href = "https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?date=";
         private string _fullHref = String.Empty;
         private DateTime _date;
         public ObservableCollection<Currency> Currencies { get; private set; }
+        
+        // Число 1
+        public double number1 = 1;
+        public double Number1
+        {
+            get { return number1; }
+            set
+            {
+                number1 = value;
+                OnPropertyChanged(nameof(Number1));
+            }
+        }
+
+        // Число 2
+        public double number2;
+        public double Number2
+        {
+            get { return number2; }
+            set
+            {
+                number2 = value;
+                OnPropertyChanged(nameof(Number2));
+            }
+        }
 
         public CurrencyConverter()
         {
@@ -45,5 +71,12 @@ namespace WpfAppSimpleProject.Commons
 
             Console.WriteLine(currenciesJSONResponse);
         }
+
+        //Для оновлення даних на формі
+        #region PropertyChanged
+        public event PropertyChangedEventHandler PropertyChanged;
+        public void OnPropertyChanged([CallerMemberName] string prop = "") =>
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(prop));
+        #endregion
     }
 }
