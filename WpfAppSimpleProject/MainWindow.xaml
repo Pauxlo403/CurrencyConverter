@@ -5,13 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfAppSimpleProject"
         mc:Ignorable="d"
-        Title="Конвертер Валют" Height="450" Width="800">
+        Title="Currency Converter" Height="450" Width="600">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="30"></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition Height="30"></RowDefinition>
         </Grid.RowDefinitions>
+        
+        <!--Меню зверху-->
         <Menu Grid.Row="0" Grid.Column="0" x:Name="Menu_MainWindow">
             <MenuItem Header="File">
                 <MenuItem Header="Exit" x:Name="MenuItem_Exit" Click="MenuItem_Exit_Click"></MenuItem>
@@ -20,9 +22,46 @@
             <MenuItem Header="View" ></MenuItem>
             <MenuItem Header="Help" ></MenuItem>
         </Menu>
+        
+        <!--Робоча зона-->
         <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
 
+            <StackPanel Grid.Row="0" Orientation="Vertical">
+                <!--Дата-->
+                <DatePicker Width="100"></DatePicker>
+                
+                <!--Перша валюта-->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,8,0,0">
+                    <TextBox Width="100"></TextBox>
+                    <ComboBox Width="160"></ComboBox>
+                </StackPanel>
+                
+                <!--Друга валюта-->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,8,0,0">
+                    <TextBox Width="100"></TextBox>
+                    <ComboBox Width="160"></ComboBox>
+                </StackPanel>
+                
+                <!--Кнопка "Виконати"-->
+                <Button Content="Execute" Width="80" Margin="0,8,0,8" Background="LightGreen"></Button>
+            </StackPanel>
+            
+            <!--Таблиця курсів-->
+            <DataGrid Grid.Row="1" AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Number"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Code"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Title"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Rate"></DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
         </Grid>
+        
+        <!--Рядок стану знизу-->
         <StatusBar Grid.Row="2" Grid.Column="0">
             <StatusBarItem>
                 <Label x:Name="Label_StatusStripItem">Ready...</Label>
