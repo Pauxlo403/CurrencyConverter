@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Linq;
 using System.Net;
 using System.Runtime.CompilerServices;
 using System.Text;
@@ -26,6 +27,18 @@ namespace WpfAppSimpleProject.Commons
             {
                 currencies = value;
                 OnPropertyChanged(nameof(Currencies));
+            }
+        }
+
+        // Список назв валют
+        private ObservableCollection<string> currencyNames = new ObservableCollection<string>();
+        public ObservableCollection<string> CurrencyNames
+        {
+            get { return currencyNames; }
+            set
+            {
+                currencyNames = value;
+                OnPropertyChanged(nameof(CurrencyNames));
             }
         }
 
@@ -85,7 +98,16 @@ namespace WpfAppSimpleProject.Commons
             // Список з JSON-файлу
             Currencies = JsonConvert.DeserializeObject<ObservableCollection<Currency>>(currenciesJSONResponse);
 
+            // Додати Українська гривня до списку
+            CurrencyNames.Add("Українська гривня");
 
+            // З загального файлу курсів валют скопіювати назви валют в окремий список
+            // для заповнення ComboBox
+            foreach (var currency in Currencies)
+            {
+                CurrencyNames.Add(currency.txt);
+            }
+            CurrencyNames = new ObservableCollection<string>(CurrencyNames.OrderBy(x => x));
             Console.WriteLine(currenciesJSONResponse);
         }
 

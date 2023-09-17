@@ -37,13 +37,17 @@
                 <!--Перша валюта-->
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,8,0,0">
                     <TextBox Width="100" Text="{Binding Number1}"></TextBox>
-                    <ComboBox Width="160" Margin="8,0,0,0"></ComboBox>
+                    <ComboBox Width="160" Margin="8,0,0,0"
+                              ItemsSource="{Binding CurrencyNames}"
+                              SelectedIndex="55"></ComboBox>
                 </StackPanel>
                 
                 <!--Друга валюта-->
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,8,0,0">
                     <TextBox Width="100" Text="{Binding Number2}"></TextBox>
-                    <ComboBox Width="160" Margin="8,0,0,0"></ComboBox>
+                    <ComboBox Width="160" Margin="8,0,0,0"
+                              ItemsSource="{Binding CurrencyNames}"
+                              SelectedIndex="60"></ComboBox>
                 </StackPanel>
                 
                 <!--Кнопка "Виконати"-->
@@ -54,7 +58,7 @@
             <DataGrid ItemsSource="{Binding Currencies}" Grid.Row="1" AutoGenerateColumns="False">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="Code" Binding="{Binding r030}"></DataGridTextColumn>
-                    <DataGridTextColumn Header="Title" Binding="{Binding txt}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Title" Binding="{Binding txt}" Width="220"></DataGridTextColumn>
                     <DataGridTextColumn Header="Rate" Binding="{Binding rate}"></DataGridTextColumn>
                 </DataGrid.Columns>
             </DataGrid>
