@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "m9GmAxWDUJQh7FQkHrL7gzlEhL1wqSCe1yKadPMvKRi8sb2s66RJDKNBru/RK8Yx5DYH26Pd5iddALK6JyVLYg==",
+  "dgSpecHash": "SAFoNhagXpEkHuRc4VgvUtJG6mvr4ot6h2gkmi2ss5HllxSmcKPu3e/dsZGyR7HwSFpFoMmfV8ebbntBcu09+g==",
   "success": true,
   "projectFilePath": "D:\\3 Академія Шаг\\Предмети\\Управління командними проектами\\Projects\\WpfAppSimpleProject\\WpfAppSimpleProject\\WpfAppSimpleProject.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

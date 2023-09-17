@@ -51,12 +51,11 @@
             </StackPanel>
             
             <!--Таблиця курсів-->
-            <DataGrid Grid.Row="1" AutoGenerateColumns="False">
+            <DataGrid ItemsSource="{Binding Currencies}" Grid.Row="1" AutoGenerateColumns="False">
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="Number"></DataGridTextColumn>
-                    <DataGridTextColumn Header="Code"></DataGridTextColumn>
-                    <DataGridTextColumn Header="Title"></DataGridTextColumn>
-                    <DataGridTextColumn Header="Rate"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Code" Binding="{Binding r030}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Title" Binding="{Binding txt}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Rate" Binding="{Binding rate}"></DataGridTextColumn>
                 </DataGrid.Columns>
             </DataGrid>
         </Grid>

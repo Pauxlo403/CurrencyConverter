@@ -1,10 +1,12 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Net;
 using System.Runtime.CompilerServices;
 using System.Text;
+using System.Text.Json.Serialization;
 
 namespace WpfAppSimpleProject.Commons
 {
@@ -14,10 +16,21 @@ namespace WpfAppSimpleProject.Commons
         private string _href = "https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?date=";
         private string _fullHref = String.Empty;
         private DateTime _date;
-        public ObservableCollection<Currency> Currencies { get; private set; }
-        
+
+        // Список курсів
+        private ObservableCollection<Currency> currencies = new ObservableCollection<Currency>();
+        public ObservableCollection<Currency> Currencies
+        {
+            get { return currencies; }
+            set
+            {
+                currencies = value;
+                OnPropertyChanged(nameof(Currencies));
+            }
+        }
+
         // Число 1
-        public double number1 = 1;
+        private double number1 = 1;
         public double Number1
         {
             get { return number1; }
@@ -29,7 +42,7 @@ namespace WpfAppSimpleProject.Commons
         }
 
         // Число 2
-        public double number2;
+        private double number2;
         public double Number2
         {
             get { return number2; }
@@ -69,10 +82,14 @@ namespace WpfAppSimpleProject.Commons
 
             string currenciesJSONResponse = client.DownloadString(_fullHref);
 
+            // Список з JSON-файлу
+            Currencies = JsonConvert.DeserializeObject<ObservableCollection<Currency>>(currenciesJSONResponse);
+
+
             Console.WriteLine(currenciesJSONResponse);
         }
 
-        //Для оновлення даних на формі
+        // Для оновлення даних на формі
         #region PropertyChanged
         public event PropertyChangedEventHandler PropertyChanged;
         public void OnPropertyChanged([CallerMemberName] string prop = "") =>

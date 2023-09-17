@@ -37,3 +37,5 @@ D:\3 Академія Шаг\Предмети\Управління команд�
 D:\3 Академія Шаг\Предмети\Управління командними проектами\Projects\WpfAppSimpleProject\WpfAppSimpleProject\obj\Debug\netcoreapp3.1\WpfAppSimpleProject.dll
 D:\3 Академія Шаг\Предмети\Управління командними проектами\Projects\WpfAppSimpleProject\WpfAppSimpleProject\obj\Debug\netcoreapp3.1\WpfAppSimpleProject.pdb
 D:\3 Академія Шаг\Предмети\Управління командними проектами\Projects\WpfAppSimpleProject\WpfAppSimpleProject\obj\Debug\netcoreapp3.1\WpfAppSimpleProject.genruntimeconfig.cache
+D:\3 Академія Шаг\Предмети\Управління командними проектами\Projects\WpfAppSimpleProject\WpfAppSimpleProject\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\3 Академія Шаг\Предмети\Управління командними проектами\Projects\WpfAppSimpleProject\WpfAppSimpleProject\obj\Debug\netcoreapp3.1\WpfAppSimpleProject.csproj.CopyComplete
