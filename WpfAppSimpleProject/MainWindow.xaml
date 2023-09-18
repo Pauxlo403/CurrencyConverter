@@ -45,13 +45,13 @@
                 <!--Друга валюта-->
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,8,0,0">
                     <TextBox Width="100" Text="{Binding Number2}"></TextBox>
-                    <ComboBox Width="160" Margin="8,0,0,0"
+                    <ComboBox x:Name="Currency2" Width="160" Margin="8,0,0,0"
                               ItemsSource="{Binding CurrencyNames}"
                               SelectedIndex="60"></ComboBox>
                 </StackPanel>
                 
                 <!--Кнопка "Виконати"-->
-                <Button Content="Execute" Width="80" Margin="0,8,0,8" Background="LightGreen"></Button>
+                <Button Content="Execute" x:Name="ExecuteButton" Width="80" Margin="0,8,0,8" Background="LightGreen" Click="ExecuteButton_Click"></Button>
             </StackPanel>
             
             <!--Таблиця курсів-->

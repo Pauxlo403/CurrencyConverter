@@ -35,5 +35,18 @@ namespace WpfAppSimpleProject
         {
             this.Close();
         }
+
+        private void ExecuteButton_Click(object sender, RoutedEventArgs e)
+        {
+            // Валюта 2
+            string Currency2Current = Currency2.SelectedItem.ToString();
+            // Курс валюти рядок
+            var CurrencyRow = _currencyConverter.Currencies.Where(x =>
+                x.txt == Currency2Current)
+                .ToList();
+            // Результат сума
+            _currencyConverter.Number2 = _currencyConverter.Number1 / CurrencyRow[0].rate;
+            _currencyConverter.Number2 = Math.Round(_currencyConverter.Number2, 3);
+        }
     }
 }
