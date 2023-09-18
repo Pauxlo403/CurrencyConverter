@@ -38,15 +38,36 @@ namespace WpfAppSimpleProject
 
         private void ExecuteButton_Click(object sender, RoutedEventArgs e)
         {
+            // Валюта 1
+            string Currency1Current = Currency1.SelectedItem.ToString();
+
+
             // Валюта 2
             string Currency2Current = Currency2.SelectedItem.ToString();
-            // Курс валюти рядок
-            var CurrencyRow = _currencyConverter.Currencies.Where(x =>
+
+            // Курс валюти 2 рядок
+            var CurrencyRow2 = _currencyConverter.Currencies.Where(x =>
                 x.txt == Currency2Current)
                 .ToList();
+
             // Результат сума
-            _currencyConverter.Number2 = _currencyConverter.Number1 / CurrencyRow[0].rate;
-            _currencyConverter.Number2 = Math.Round(_currencyConverter.Number2, 3);
+            // Якщо валюта 1 - Гривня, то курс беремо зі списку, інакше рахуємо крос-курс
+            if (Currency1Current == "Українська гривня")
+            {
+                _currencyConverter.Number2 = _currencyConverter.Number1 / CurrencyRow2[0].rate;
+                _currencyConverter.Number2 = Math.Round(_currencyConverter.Number2, 3);
+            }
+            else
+            {
+                // Курс валюти 1 рядок
+                var CurrencyRow1 = _currencyConverter.Currencies.Where(x =>
+                x.txt == Currency1Current)
+                .ToList();
+
+                _currencyConverter.Number2 = _currencyConverter.Number1 * CurrencyRow1[0].rate / CurrencyRow2[0].rate;
+                _currencyConverter.Number2 = Math.Round(_currencyConverter.Number2, 3);
+
+            }
         }
     }
 }

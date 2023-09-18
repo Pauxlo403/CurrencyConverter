@@ -37,7 +37,7 @@
                 <!--Перша валюта-->
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,8,0,0">
                     <TextBox Width="100" Text="{Binding Number1}"></TextBox>
-                    <ComboBox Width="160" Margin="8,0,0,0"
+                    <ComboBox x:Name="Currency1" Width="160" Margin="8,0,0,0"
                               ItemsSource="{Binding CurrencyNames}"
                               SelectedIndex="55"></ComboBox>
                 </StackPanel>
